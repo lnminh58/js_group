@@ -25,3 +25,21 @@ const mux = (number1) => (number2) => number1 * number2
 const muxWithFive = mux(5)
 console.log(muxWithFive(3)) 
 
+
+const user = {
+  name: 'Nhan',
+  age: {
+    yearOlds: 25,
+    birthday: '8-3-1994'
+  },
+  sex: 'female',
+  friends: ['Thiem', 'Minh'],
+  greeting: function () {
+    console.log('hello, I am ',this.name)
+  }
+}
+
+let { age, name }  = user
+name = 'Minh'
+age.yearOlds = 26
+console.log(user, age, name)
